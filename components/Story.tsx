@@ -52,7 +52,7 @@ export default function Story() {
                 <div className="relative w-[80px] h-[80px] shrink-0 rounded-full overflow-hidden">
                   <Image
                     src="/images/baker-portrait.png"
-                    alt="HOKO Konditorin"
+                    alt="HOKO Konditormeister"
                     fill
                     className="object-cover"
                     sizes="80px"
@@ -63,7 +63,7 @@ export default function Story() {
                     Marie L.
                   </p>
                   <p className="text-[13px] text-muted-foreground mt-1 leading-snug">
-                    Konditorin-Meisterin · 9 Jahre Patisserie-Erfahrung · Bäckt für HOKO.
+                    Konditormeister · 9 Jahre Patisserie-Erfahrung · backt für HOKO.
                   </p>
                 </div>
               </div>
