@@ -11,7 +11,7 @@ const steps = [
   {
     number: "02",
     headline: "WIR BACKEN",
-    body: `Drop-Tag: Konditorin bäckt frisch am Morgen. 4 Tarts pro Box.`,
+    body: `Drop-Tag: Konditormeister backt frisch am Morgen. 4 Tarts pro Box.`,
   },
   {
     number: "03",
@@ -44,17 +44,17 @@ export default function DropMechanik() {
             <RevealBlock key={step.number} delay={i * 80}>
               <div className="flex items-stretch border-b border-foreground min-h-[140px] md:min-h-[160px]">
                 {/* Number column */}
-                <div className="w-[100px] md:w-[180px] lg:w-[220px] shrink-0 border-r border-foreground flex items-center justify-center py-6">
+                <div className="w-[72px] md:w-[180px] lg:w-[220px] shrink-0 border-r border-foreground flex items-center justify-center py-6">
                   <span
                     className="font-bold text-foreground leading-none tracking-tight"
-                    style={{ fontSize: "clamp(56px, 9vw, 128px)" }}
+                    style={{ fontSize: "clamp(40px, 9vw, 128px)" }}
                   >
                     {step.number}
                   </span>
                 </div>
 
                 {/* Content column */}
-                <div className="flex-1 flex flex-col justify-center px-8 md:px-12 py-8">
+                <div className="flex-1 flex flex-col justify-center px-4 md:px-12 py-6 md:py-8">
                   <p className="text-[11px] font-bold tracking-[0.2em] text-accent uppercase mb-3">
                     {step.headline}
                   </p>

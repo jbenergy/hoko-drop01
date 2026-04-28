@@ -117,7 +117,7 @@ export default function PreOrderForm({ soldBoxes = 0 }: PreOrderFormProps) {
 
           {/* Right: form */}
           <RevealBlock delay={120} className="flex-1">
-            <div className="border border-foreground p-8 md:p-10">
+            <div className="border border-foreground p-5 md:p-10">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
 
                 {/* Vorname */}
@@ -213,7 +213,7 @@ export default function PreOrderForm({ soldBoxes = 0 }: PreOrderFormProps) {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="group w-full flex items-center justify-between bg-accent text-background font-bold text-[16px] h-[60px] px-8 hover:bg-foreground transition-colors duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+                  className="group w-full flex items-center justify-between bg-accent text-background font-bold text-[14px] md:text-[16px] h-[56px] md:h-[60px] px-6 md:px-8 hover:bg-foreground transition-colors duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   <span>{isLoading ? "Weiterleitung..." : "Jetzt bezahlen und Box sichern"}</span>
                   {!isLoading && (

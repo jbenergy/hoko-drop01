@@ -39,7 +39,7 @@ export default function Hero({ soldBoxes = 0 }: HeroProps) {
       />
 
       {/* Content overlay */}
-      <div className="absolute inset-0 z-10 flex flex-col justify-between px-8 md:px-14 lg:px-20 py-10 md:py-12">
+      <div className="absolute inset-0 z-10 flex flex-col justify-between px-6 md:px-14 lg:px-20 py-8 md:py-12">
 
         {/* Top: Drop label */}
         <p className="animate-fade-up text-[11px] font-bold tracking-[0.2em] text-foreground/50 uppercase">
@@ -53,7 +53,7 @@ export default function Hero({ soldBoxes = 0 }: HeroProps) {
           <div>
             <h1
               className="animate-fade-up-delay-1 font-bold text-foreground leading-[0.86] tracking-tight"
-              style={{ fontSize: "clamp(54px, 7.8vw, 116px)" }}
+              style={{ fontSize: "clamp(36px, 10vw, 116px)" }}
             >
               CRISPY.
               <br />
@@ -90,7 +90,7 @@ export default function Hero({ soldBoxes = 0 }: HeroProps) {
             {isSoldOut ? (
               <a
                 href="#newsletter"
-                className="group flex items-center justify-between gap-6 bg-foreground text-background font-bold text-[15px] h-[54px] px-8 hover:bg-accent transition-colors duration-200 min-w-[280px]"
+                className="group flex items-center justify-between gap-6 bg-foreground text-background font-bold text-[15px] h-[54px] px-8 hover:bg-accent transition-colors duration-200 w-full md:min-w-[280px]"
               >
                 <span>Newsletter für Drop 02</span>
                 <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
@@ -99,7 +99,7 @@ export default function Hero({ soldBoxes = 0 }: HeroProps) {
               <div className="space-y-2">
                 <button
                   onClick={handleCTAClick}
-                  className="group flex items-center justify-between gap-6 bg-accent text-background font-bold text-[16px] h-[54px] px-8 hover:bg-foreground transition-colors duration-200 cursor-pointer min-w-[280px]"
+                  className="group flex items-center justify-between gap-6 bg-accent text-background font-bold text-[15px] md:text-[16px] h-[54px] px-8 hover:bg-foreground transition-colors duration-200 cursor-pointer w-full md:min-w-[280px]"
                 >
                   <span>Box sichern · 18 Euro</span>
                   <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
