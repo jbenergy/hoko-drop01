@@ -16,7 +16,7 @@ const steps = [
   {
     number: "03",
     headline: "PICKUP",
-    body: `${PICKUP_DATE}, ${PICKUP_TIME}. ${PICKUP_ADDRESS}. Box mitnehmen. Anschneiden. Bruch erleben.`,
+    body: `${PICKUP_DATE}, ${PICKUP_TIME}. ${PICKUP_ADDRESS}. Box mitnehmen. Den Anschnitt erleben.`,
   },
 ];
 

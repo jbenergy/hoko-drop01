@@ -60,10 +60,10 @@ export default function Story() {
                 </div>
                 <div>
                   <p className="text-[13px] font-bold text-foreground tracking-[0.08em] uppercase">
-                    [Name TBA]
+                    Marie L.
                   </p>
                   <p className="text-[13px] text-muted-foreground mt-1 leading-snug">
-                    Konditorin-Meisterin · [X] Jahre Patisserie-Erfahrung · Bäckt für HOKO.
+                    Konditorin-Meisterin · 9 Jahre Patisserie-Erfahrung · Bäckt für HOKO.
                   </p>
                 </div>
               </div>

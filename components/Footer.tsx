@@ -28,7 +28,7 @@ export default function Footer() {
               <br />
               Knappheit ist Ehrlichkeit.
               <br />
-              Der Bruch ist der Moment.
+              Der Anschnitt ist der Moment.
             </p>
           </div>
 
