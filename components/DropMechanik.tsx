@@ -69,13 +69,16 @@ export default function DropMechanik() {
       </div>
 
       {/* Drop lineup image — full width */}
-      <RevealBlock className="mt-0">
-        <div className="relative w-full overflow-hidden" style={{ height: "clamp(240px, 35vw, 440px)" }}>
+      <RevealBlock className="mt-0 px-8 md:px-14 lg:px-20 pb-24 md:pb-32 pt-12 max-w-[1200px] mx-auto">
+        <div
+          className="relative w-full overflow-hidden rounded-2xl"
+          style={{ height: "clamp(240px, 35vw, 440px)" }}
+        >
           <Image
             src="/images/drop-lineup.png"
             alt="Vier HOKO-Boxen aufgereiht auf einem Holztresen, bereit für Pickup"
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-700 ease-out hover:scale-105"
             sizes="100vw"
           />
         </div>

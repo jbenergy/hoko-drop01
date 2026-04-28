@@ -72,12 +72,12 @@ export default function Story() {
 
           {/* Image */}
           <RevealBlock direction="left" className="w-full md:w-[380px] shrink-0">
-            <div className="relative aspect-square w-full overflow-hidden">
+            <div className="relative aspect-square w-full overflow-hidden rounded-2xl">
               <Image
                 src="/images/crust-macro.png"
                 alt="Detailaufnahme der knusprigen Sablé-Kruste einer Hokkaido Cheese Tart"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 ease-out hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 380px"
               />
             </div>

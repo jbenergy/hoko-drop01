@@ -1,14 +1,43 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
+const text =
+  "Frische ist nicht verhandelbar · Knappheit ist Ehrlichkeit · Der Bruch ist der Moment · Heute frisch · Morgen weg · ";
+
 export default function CreedStrip() {
-  const text =
-    "Frische ist nicht verhandelbar · Knappheit ist Ehrlichkeit · Der Bruch ist der Moment · Heute frisch · Morgen weg · ";
+  const trackRef = useRef<HTMLDivElement>(null);
+  const posRef = useRef(0);
+  const rafRef = useRef<number>(0);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const speed = 0.6; // px per frame
+
+    const tick = () => {
+      posRef.current -= speed;
+      // Reset when first half has scrolled out
+      const halfWidth = track.scrollWidth / 2;
+      if (Math.abs(posRef.current) >= halfWidth) {
+        posRef.current = 0;
+      }
+      track.style.transform = `translateX(${posRef.current}px)`;
+      rafRef.current = requestAnimationFrame(tick);
+    };
+
+    rafRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, []);
 
   return (
     <div className="w-full bg-foreground border-b border-foreground overflow-hidden py-[14px]">
-      <div className="flex whitespace-nowrap animate-marquee">
-        {[...Array(6)].map((_, i) => (
+      <div ref={trackRef} className="flex whitespace-nowrap will-change-transform">
+        {[...Array(8)].map((_, i) => (
           <span
             key={i}
-            className="text-[11px] font-bold text-background tracking-[0.18em] uppercase shrink-0"
+            className="text-[11px] font-bold text-background tracking-[0.18em] uppercase shrink-0 pr-0"
           >
             {text}
           </span>

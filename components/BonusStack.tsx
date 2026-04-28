@@ -39,12 +39,12 @@ export default function BonusStack() {
 
           {/* Image */}
           <RevealBlock direction="right" className="w-full md:w-[45%] shrink-0">
-            <div className="relative aspect-square w-full overflow-hidden">
+            <div className="relative aspect-square w-full overflow-hidden rounded-2xl">
               <Image
                 src="/images/box-open.png"
                 alt="HOKO-Box geöffnet, 4 frisch gebackene Hokkaido Cheese Tarts in 2x2 Anordnung"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 ease-out hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 45vw"
               />
             </div>
