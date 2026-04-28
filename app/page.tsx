@@ -1,6 +1,7 @@
 import PreHeroTagline from "@/components/PreHeroTagline";
 import Hero from "@/components/Hero";
 import CreedStrip from "@/components/CreedStrip";
+import ProductShots from "@/components/ProductShots";
 import Story from "@/components/Story";
 import DropMechanik from "@/components/DropMechanik";
 import BonusStack from "@/components/BonusStack";
@@ -20,6 +21,7 @@ export default function Home() {
         <PreHeroTagline />
         <Hero soldBoxes={SOLD_BOXES} />
         <CreedStrip />
+        <ProductShots />
         <Story />
         <DropMechanik />
         <BonusStack />
