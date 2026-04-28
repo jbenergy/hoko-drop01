@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 const text =
-  "Frische ist nicht verhandelbar · Knappheit ist Ehrlichkeit · Der Anschnitt ist der Moment · Heute frisch · Morgen weg · ";
+  "Frische ist nicht verhandelbar · Heute frisch · Morgen weg · Hokkaido Cheese Tart · Berlin · 50 Boxen · Drop 01 · ";
 
 export default function CreedStrip() {
   const trackRef = useRef<HTMLDivElement>(null);

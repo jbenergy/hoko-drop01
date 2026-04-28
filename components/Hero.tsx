@@ -41,20 +41,10 @@ export default function Hero({ soldBoxes = 0 }: HeroProps) {
       {/* Content overlay */}
       <div className="absolute inset-0 z-10 flex flex-col justify-between px-8 md:px-14 lg:px-20 py-10 md:py-12">
 
-        {/* Top: HOKO Logo + Drop label */}
-        <div className="animate-fade-up flex items-center justify-between">
-          <Image
-            src="/images/hoko-logo-on-cream.svg"
-            alt="HOKO"
-            width={96}
-            height={28}
-            className="h-[24px] w-auto"
-            priority
-          />
-          <p className="text-[11px] font-bold tracking-[0.2em] text-foreground/50 uppercase hidden md:block">
-            Drop 01&nbsp;&nbsp;·&nbsp;&nbsp;Berlin&nbsp;&nbsp;·&nbsp;&nbsp;30.05.2026
-          </p>
-        </div>
+        {/* Top: Drop label */}
+        <p className="animate-fade-up text-[11px] font-bold tracking-[0.2em] text-foreground/50 uppercase">
+          Drop 01&nbsp;&nbsp;·&nbsp;&nbsp;Berlin&nbsp;&nbsp;·&nbsp;&nbsp;30.05.2026
+        </p>
 
         {/* Bottom: H1 left · CTA right */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
