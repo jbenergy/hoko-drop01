@@ -23,20 +23,20 @@ export default function ProductShots() {
           </div>
         </div>
 
-        {/* Krusten-Detail */}
+        {/* Ensemble: ganz & aufgebrochen */}
         <div className="relative overflow-hidden group">
           <div className="relative aspect-[4/3] md:aspect-auto md:h-[560px]">
             <Image
-              src="/images/crust-macro.png"
-              alt="Knusprige Teigkruste der Hokkaido Cheese Tart, Nahaufnahme"
+              src="/images/assamble.png"
+              alt="Hokkaido Cheese Tart – ganz und aufgebrochen mit fließender Cremefüllung"
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
               sizes="(max-width: 768px) 100vw, 40vw"
             />
           </div>
           <div className="absolute bottom-0 left-0 px-6 py-4 bg-background/90 border-t border-r border-foreground">
             <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-foreground/60">
-              Handgemacht · Täglich frisch
+              Crispy außen · Cremig innen
             </p>
           </div>
         </div>
