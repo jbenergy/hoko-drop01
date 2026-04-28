@@ -1,0 +1,10 @@
+export const PICKUP_ADDRESS = "Berlin-Mitte, Torstraße [TBA]";
+export const PICKUP_DATE = "Sa 30.05.2026";
+export const PICKUP_TIME = "16:00–18:00 Uhr";
+export const TOTAL_BOXES = 50;
+export const PRICE_PER_BOX = 18;
+export const MAX_BOXES_PER_ORDER = 3;
+export const DROP_NAME = "Drop 01";
+export const CONTACT_EMAIL = "hello@eathoko.com";
+export const INSTAGRAM_HANDLE = "@eathoko";
+export const TIKTOK_HANDLE = "@eathoko";
